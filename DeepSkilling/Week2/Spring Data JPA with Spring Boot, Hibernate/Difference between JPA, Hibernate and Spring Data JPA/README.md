@@ -3,7 +3,7 @@ Java Persistence API (JPA) is a specification that defines standards for mapping
 database tables. It provides annotations such as @Entity, @Table, @Id and @Column but does
 not implement database operations.
 
-Hibernate
+
 Hibernate is an ORM framework that implements JPA. It converts Java objects into SQL queries
 and manages persistence.
 
