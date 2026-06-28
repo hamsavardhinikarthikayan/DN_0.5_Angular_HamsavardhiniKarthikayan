@@ -7,7 +7,8 @@ not implement database operations.
 Hibernate is an ORM framework that implements JPA. It converts Java objects into SQL queries
 and manages persistence.
 
-Spring Data JPA
+
+
 Spring Data JPA builds on JPA implementations like Hibernate and reduces boilerplate code by
 providing repositories such as JpaRepository. It also integrates transaction management.
 
@@ -23,6 +24,7 @@ Create a repository extending JpaRepository, autowire it in a service, annotate 
 
 Comparison
 JPA: Specification, no implementation.
-Hibernate: ORM framework implementing JPA.
-Spring Data JPA: Spring abstraction over JPA that simplifies CRUD operations and reduces
-boilerplate.
+
+Hibernate: ORM framework implementing JPA
+
+Spring Data JPA: Spring abstraction over JPA that simplifies CRUD operations and reduces boilerplate.
