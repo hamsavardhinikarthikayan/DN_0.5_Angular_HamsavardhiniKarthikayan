@@ -1,0 +1,42 @@
+input,
+select {
+
+  width: 250px;
+  padding: 8px;
+  margin-top: 5px;
+
+}
+
+button {
+
+  padding: 8px 15px;
+  margin-right: 10px;
+
+}
+
+.error {
+
+  color: red;
+  font-size: 14px;
+
+}
+
+.success {
+
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+
+.ng-invalid.ng-touched {
+
+  border: 2px solid red;
+
+}
+
+.ng-valid.ng-touched {
+
+  border: 2px solid green;
+
+}

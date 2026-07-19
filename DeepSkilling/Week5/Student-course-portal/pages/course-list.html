@@ -1,0 +1,42 @@
+<h2>Available Courses</h2>
+
+<input
+  type="text"
+  [(ngModel)]="searchTerm"
+  placeholder="Search course">
+
+<button
+  (click)="searchCourses()">
+
+  Search
+
+</button>
+
+<hr>
+
+<div class="course-container">
+
+  <div
+    *ngFor="let c of filteredCourses"
+    (click)="viewCourse(c)"
+    style="cursor:pointer;margin-bottom:15px;">
+
+    <app-course-card
+
+      [course]="c"
+
+      (enrollRequested)="onEnroll($event)">
+
+    </app-course-card>
+
+  </div>
+
+</div>
+
+<p *ngIf="selectedCourseId">
+
+Selected Course ID :
+
+<b>{{selectedCourseId}}</b>
+
+</p>

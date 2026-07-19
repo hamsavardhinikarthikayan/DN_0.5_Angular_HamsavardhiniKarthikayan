@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+.ng-valid.ng-touched {
+  border: 2px solid green;
+}
+
+hr {
+  margin: 20px 0;
+}
