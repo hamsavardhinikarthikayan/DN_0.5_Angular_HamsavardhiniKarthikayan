@@ -1,0 +1,31 @@
+<div class="card">
+
+    <h3>{{ course.name }}</h3>
+
+    <p>Code : {{ course.code }}</p>
+
+    <p>Credits : {{ course.credits }}</p>
+
+    <p>Status : {{ course.gradeStatus }}</p>
+
+    <ng-container *ngIf="enrolledIds$ | async as ids">
+
+        <button
+            *ngIf="!ids.includes(course.id)"
+            (click)="enroll()">
+
+            Enroll
+
+        </button>
+
+        <button
+            *ngIf="ids.includes(course.id)"
+            (click)="unenroll()">
+
+            Unenroll
+
+        </button>
+
+    </ng-container>
+
+</div>
