@@ -1,0 +1,21 @@
+<h2>Courses</h2>
+
+<div *ngIf="loading$ | async">
+
+    Loading Courses...
+
+</div>
+
+<div *ngIf="error$ | async as error">
+
+    {{ error }}
+
+</div>
+
+<app-course-card
+
+    *ngFor="let course of courses$ | async"
+
+    [course]="course">
+
+</app-course-card>
